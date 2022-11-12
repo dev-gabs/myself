@@ -1,0 +1,30 @@
+/* My Skills */
+
+/* - Background */
+
+.background_red_ellipse {
+  top: 79.8rem;
+  position: absolute;
+}
+
+.my_skills {
+  height: 100rem;
+}
+
+.my_skills h1 {
+  margin-top: 6rem;
+
+  font-family: 'Poppins';
+  font-size: 3rem;
+  color: white;
+}
+
+.my_skills .border {
+  height: 0.2rem;
+  background-color: var(--strong-red);
+
+  position: relative;
+  top: -0.9rem;
+
+  z-index: -1;
+}

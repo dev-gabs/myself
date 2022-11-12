@@ -2,8 +2,18 @@
 
 .home {
   padding-top: calc(3.2rem + var(--nav-height));
+  padding-bottom: 6.7rem;
+
+  border-bottom: 3px solid var(--strong-green);
 
   background: linear-gradient(74.27deg, #2c3344 -2%, #181818 131.04%);
+}
+
+.home .wrapper {
+  width: 37.7rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .home .hi {
@@ -39,10 +49,14 @@
 }
 
 .home .infos p {
+  width: 32.7rem;
+
   margin-top: 2.5rem;
+  margin-bottom: 6.7rem;
 
   font-family: 'DM Sans';
   font-size: 1.3rem;
+  line-height: 150%;
 
   color: var(--low-contrast-text)
 }
@@ -53,4 +67,8 @@
 
 .home .infos p strong:nth-child(4) {
   color: var(--light-blue);
+}
+
+.home img {
+  height: 16rem;
 }
