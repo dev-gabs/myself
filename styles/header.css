@@ -1,0 +1,20 @@
+/* Header */
+
+nav {
+  width: 100vw;
+  
+  position: fixed;
+}
+
+nav .wrapper {
+  height: var(--nav-height);
+  width: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav svg:first {
+  height: 2.5rem;
+}
