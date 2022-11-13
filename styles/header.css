@@ -2,8 +2,19 @@
 
 nav {
   width: 100vw;
-  
+
   position: fixed;
+
+  transition: 0.2s;
+
+  z-index: 3;
+}
+
+nav.opened {
+  background-color: #2e354785;
+  backdrop-filter: blur(12.5px);
+
+  border-bottom: 3px solid #2e3547;
 }
 
 nav .wrapper {

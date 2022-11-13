@@ -20,6 +20,8 @@
   --strong-green: hsla(151, 96%, 44%, 1);
 
   --strong-red: hsla(350, 72%, 52%, 1);
+
+  scroll-behavior: smooth;
 }
 
 :root {

@@ -49,7 +49,7 @@
 }
 
 .home .infos p {
-  width: 32.7rem;
+  max-width: 32.7rem;
 
   margin-top: 2.5rem;
   margin-bottom: 6.7rem;
