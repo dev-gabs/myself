@@ -32,11 +32,11 @@
 }
 
 .my_skills .wrapper > p {
-  margin-top: 3.9rem;
+  margin-top: 3.5rem;
   margin-bottom: 0.7rem;
 
   font-family: 'DM Sans';
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--low-contrast-text);
   text-align: center;
 }
@@ -85,27 +85,17 @@
   backdrop-filter: blur(12.5px);
 }
 
-.my_skills .content div.musicSection,
-.my_skills .content div.devSection,
-.my_skills .content div.designSection,
-.my_skills .content div.engeneeringSection,
-.my_skills .content div.printSection {
+.my_skills .content > div {
   display: none;
-  opacity: 0;
-
-  transition: 0.2s;
 }
 
-.my_skills .content div.active.musicSection,
-.my_skills .content div.active.devSection,
-.my_skills .content div.active.designSection,
-.my_skills .content div.active.engeneeringSection,
-.my_skills .content div.active.printSection {
+
+.my_skills .content > div.active {
   display: initial;
-  opacity: 1;
 }
 
-.my_skills .content div.devSection {
+
+.my_skills .content div.active.devSection {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;

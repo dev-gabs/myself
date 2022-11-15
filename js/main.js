@@ -18,31 +18,41 @@ function openedNav() {
 
 // Actions on icons
 
-const musicIcon = document.getElementById("music")
-const devIcon = document.getElementById("dev")
-const designIcon = document.getElementById("design")
-const engeneeringIcon = document.getElementById("engeneering")
-const printIcon = document.getElementById("print")
+const musicIcon = document.getElementById('music')
+const devIcon = document.getElementById('dev')
+const designIcon = document.getElementById('design')
+const engeneeringIcon = document.getElementById('engeneering')
+const printIcon = document.getElementById('print')
 
-const icon = document.querySelectorAll(".menuIcon")
+const icon = document.querySelectorAll('.menuIcon')
+
+const skillsInstruction = document.getElementById('skillsInstruction')
 
 for (element of icon) {
   element.addEventListener('click', function () {
     for (element of icon) {
-      element.classList.remove("active")
+      element.classList.remove('active')
 
-      let section = document.querySelector(`div.${element.id + "Section"}`)
+      // Finds the icons sections \/
+
+      let section = document.querySelector(`div.${element.id + 'Section'}`)
 
       section.classList.remove('active')
     }
-    this.classList.add("active")
+
+    this.classList.add('active')
+
+    // Finds the especific icon section \/
 
     let section = document.querySelector(`div.${this.id + 'Section'}`)
-  
-    setTimeout(function(){
-      section.classList.add('active')
-    }, 200)
+
+    section.classList.add('active')
+
+    skillsInstruction.textContent = capitalizeFirstLetter(this.id)
+    skillsInstruction.style.color = "white"
   })
 }
 
-
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
