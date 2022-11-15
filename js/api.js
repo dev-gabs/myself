@@ -1,6 +1,6 @@
 const devSection = document.querySelector('div.devSection')
 
-axios.get('http://api.github.com/users/dev-gabs/repos?sort=created').then(d => {
+axios.get('https://api.github.com/users/dev-gabs/repos?sort=created').then(d => {
   const reposArray = d.data
 
   for (repo of reposArray) {
