@@ -32,15 +32,12 @@ function createPost() {
   let buttonDiv = document.createElement('div')
   buttonDiv.classList.add('actions')
 
-  let pageButton = document.createElement('a')
-  pageButton.setAttribute('href', `https://dev-gabs.github.io/${repo.name}`)
-  pageButton.setAttribute('target', `_blank`)
-  pageButton.textContent = 'Project Page'
-
   let gitButton = document.createElement('a')
-  gitButton.classList.add('git')
   gitButton.setAttribute('href', `https://github.com/dev-gabs/${repo.name}`)
   gitButton.setAttribute('target', `_blank`)
+
+  let gitText = document.createElement('p')
+  gitText.textContent = "GitHub Repository"
 
   let gitIcon = document.createElement('img')
   gitIcon.setAttribute('src', './assets/github_icon.svg')
@@ -53,8 +50,8 @@ function createPost() {
   repoInfos.appendChild(repoDescription)
 
   gitButton.appendChild(gitIcon)
+  gitButton.appendChild(gitText)
 
-  buttonDiv.appendChild(pageButton)
   buttonDiv.appendChild(gitButton)
 
   post.appendChild(repoInfos)

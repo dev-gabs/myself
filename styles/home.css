@@ -50,6 +50,7 @@
 
 .home .infos p {
   max-width: 32.7rem;
+  min-height: 11.5rem;
 
   margin-top: 2.5rem;
   margin-bottom: 5.2rem;
@@ -71,4 +72,28 @@
 
 .home img {
   height: 16rem;
+}
+
+@media (min-width: 768px) {
+  .home {
+    padding-bottom: 4.8rem;
+  }
+
+  .home .wrapper {
+    width: auto;
+
+    align-items: center;
+  }
+
+  .home .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home .infos p {
+    max-width: 49.3rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
