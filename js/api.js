@@ -6,8 +6,6 @@ axios.get('http://api.github.com/users/dev-gabs/repos?sort=created').then(d => {
   for (repo of reposArray) {
     createPost()
   }
-
-  console.log(reposArray)
 })
 
 function createPost() {
