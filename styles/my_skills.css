@@ -161,7 +161,7 @@ section.post {
   justify-content: space-between;
 }
 
-.post .actions button {
+.post .actions a {
   height: 100%;
 
   padding: 0.9rem;
@@ -171,18 +171,21 @@ section.post {
   font-size: 1.3rem;
   font-weight: bold;
   color: white;
+  text-decoration: none;
 
   background-color: hsla(0, 0%, 100%, 0.1);
   border: 0;
 
   transition: 0.15s;
+
+  -webkit-tap-highlight-color: transparent
 }
 
-.post .actions button:active {
+.post .actions a:active {
   opacity: 0.5;
 }
 
-.post .actions button.git {
+.post .actions a.git {
   width: 3.5rem;
   background-color: hsla(263, 57%, 38%, 1);
 
