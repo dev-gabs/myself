@@ -18,14 +18,7 @@ function openedNav() {
 
 // Actions on icons
 
-const musicIcon = document.getElementById('music')
-const devIcon = document.getElementById('dev')
-const designIcon = document.getElementById('design')
-const engeneeringIcon = document.getElementById('engeneering')
-const printIcon = document.getElementById('print')
-
 const icon = document.querySelectorAll('.menuIcon')
-
 const skillsInstruction = document.getElementById('skillsInstruction')
 
 for (element of icon) {
