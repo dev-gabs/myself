@@ -1,12 +1,15 @@
 const devSection = document.querySelector('div.devSection')
 
-axios.get('https://api.github.com/users/dev-gabs/repos?sort=created').then(d => {
-  const reposArray = d.data
+axios
+  .get('https://api.github.com/users/dev-gabs/repos?sort=created')
+  .then(d => {
+    const reposArray = d.data
 
-  for (repo of reposArray) {
-    createPost()
-  }
-})
+    for (repo of reposArray) {
+      createPost()
+    }
+  })
+  .catch(err => console.error(err))
 
 function createPost() {
   // Create post elements
@@ -37,7 +40,7 @@ function createPost() {
   gitButton.setAttribute('target', `_blank`)
 
   let gitText = document.createElement('p')
-  gitText.textContent = "GitHub Repository"
+  gitText.textContent = 'GitHub Repository'
 
   let gitIcon = document.createElement('img')
   gitIcon.setAttribute('src', './assets/github_icon.svg')
